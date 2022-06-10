@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+        <a href="home.html"><img id="headerLogo" src="images/star-command-logo-dynamic.png"></a>
+
+        <a href="young-cadets.html"><button>Young Cadets</button></a>
+        <a href="calendar.html"><button>Training and Events Calendar</button></a>
+        <a href="missions.html"><button>Mission Board</button></a>
+
+        <a href="profile.html"><img id="headerProfile" src="images/Alicia_Hawthorne_square.png"></a>
+        </div> 
+    </header>
+    <div id="mainContainer"> 
+        <div id="popupMenu" class="popup">
+            <button onclick="menuCloseFunction(popupMenu)">X</button>
+            <img id="popupProfilePhoto" src="images/Alicia_Hawthorne_square.png">
+            <a href="profile.html"><h3>Profile</h3></a>
+            <a href="calendar.html"><h3>Training and Events Calendar</h3></a>
+            <a href="missions.html"><h3>Mission Board</h3></a>
+            <a href="young-cadets.html"><h3>Young Cadets Program</h3></a>
+            <a href="locations.html"><h3>Locations</h3></a>
+            <a href="contact.html"><h3>Contact</h3></a>
+            <a href="login.html"><h3>Log Out</h3></a>
+        </div>
+        <nav>
+            <!-- Hide for desktop and mobile (make pop-up menu)-->
+            <button onclick="menuFunction(popupMenu)">☰</button>
+            <a href="home.html"><img src="images/star-command-logo-dynamic.png"></a>
+        </nav>
+        <h1>Training and Event Calendar</h1>
+        <button class="showButton" onclick="showFilter()">i</button>
+        <aside class="popupFilter">
+            <button class="filterButton active" onclick="filterSelection('all')">Show All</button>
+            <button class="filterButton" onclick="filterSelection('training')">Training</button>
+            <button class="filterButton" onclick="filterSelection('semenar')">Semenars</button>
+            <button class="filterButton" onclick="filterSelection('office')">Office Events</button>
+            <button class="runFilterButton" onclick="hideFilter()">Close</button>
+        </aside>
+        <main id="eventCalendar">
+            <hr>
+            <div class="filterDiv calendarSlot training">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot training">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot office">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot semenar">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot semenar">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot semenar">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot training">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot semenar">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot training">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot training">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="filterDiv calendarSlot office">
+                <h3>Title</h3>
+                <p>blurb about the event...++ a expandable "read more" button.</p>
+                <p>a place to concatinate tags that have been added or filtered</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>Inter Galactic</p>
+                <p>Sapien Recourses</p>
+                <p>888.888.8888</p>
+                </div>
+                <div>
+                <a href="locations.html">Locations</a>
+                <br>
+                <a href="contact.html">Contact Support</a>
+                <br>
+                <a href="FAQs.html">FAQs</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
