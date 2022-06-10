@@ -505,7 +505,7 @@ footer>div {
 .locationDiv {
     background-color: #203855;
     width: 250;
-    height: 150px;
+    height: 200px;
     padding: 20px;
     margin-top: 30px;
     display: flex;
@@ -525,6 +525,9 @@ footer>div {
 .locationDiv > div > p {
     color: white;
     margin-top: 10px;
+}
+.calendarSlot > img {
+    width: 200px;
 }
 
 
@@ -665,16 +668,13 @@ footer>div {
         width: 600px;
     }
     #locationMap > .blipA {
-        transform: translate(-138px, 23px);
+        transform: translate(350px, 67px);
     }
     #locationMap > .blipB {
-        transform: translate(-240px, 98px);
+        transform: translate(160px, 208px);
     }
     #locationMap > .blipC {
-        transform: translate(-29px, 114px);
-    }
-    .locationDiv {
-        
+        transform: translate(555px, 240px);
     }
     .locationDiv > .blipA, 
     .locationDiv > .blipB, 
@@ -685,11 +685,13 @@ footer>div {
         height: 30px;
         margin-right: 20px;
     }
-    .locationDiv > div > h3 {
-        color: rgb(221, 8, 8);
+    #locationMap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .locationDiv > div > p {
-
+    .locationDiv, .locationDiv > div {
+        width: 250px;
     }
 }
 
@@ -776,5 +778,17 @@ footer>div {
     }
     #youngCadets > p {
         font-size: 20px;
+    }
+    #map {
+        width: 900px;
+    }
+    #locationMap > .blipA {
+        transform: translate(529px, 115px);
+    }
+    #locationMap > .blipB {
+        transform: translate(245px, 328px);
+    }
+    #locationMap > .blipC {
+        transform: translate(837px, 375px);
     }
 }
